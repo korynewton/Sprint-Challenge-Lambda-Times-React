@@ -22,4 +22,5 @@ Tabs.propTypes = {
 
 
 
+
 export default Tabs;
