@@ -29,9 +29,19 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+PropTypes are used for preemptively checking the type of data a component is receiving. Being proactive in checking what data is passed through components can prevent bugs from being introduced into your code either purposefully or by accident.
+
 - [ ] Describe a life-cycle event in React?
+A lifecycle event is a function which is called during specific times during the lifespan of a compoennt. For example, the componentDidMount() function is called just after the component is rendered to the DOM. We can use these built in life-cycle event functions to update, fetch and remove components in a more controlled and meaningful way.
+
+
 - [ ] Explain the details of a Higher Order Component?
+A Higher Order Component is a function that can receive a component as an argument. By passing components through a higher order component we can create reusable components that even have their own seperate state if that is what we are looking for, very simply. We can also use higher order components as a sort of gate keeper by passig it two components and depending on some logic, render two different UIs for the user. This works great for a login screen.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+1) CSS: Simple, effective. Widely understood as it has been used for many years in styling html.
+2) styled:components: Being able to write css in javascript is a huge plus when you are already in a javascript/component mindset. Styles can be reused by exporting them wherever they are needed. Logic can be introduced as props to add changes to reusable features depending on where they are in the App
+3) reactstrap: The main benefit is that you can build a very nice looking application by importing premade and prestyled components. It can turn a very bland styled application into something professional in  surprisinly few lines of code.
 
 ## Project Setup
 
