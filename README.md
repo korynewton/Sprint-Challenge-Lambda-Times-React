@@ -29,22 +29,32 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+PropTypes are used for preemptively checking the type of data a component is receiving. Being proactive in checking what data is passed through components can prevent bugs from being introduced into your code either purposefully or by accident.
+
 - [ ] Describe a life-cycle event in React?
+A lifecycle event is a function which is called during specific times during the lifespan of a compoennt. For example, the componentDidMount() function is called just after the component is rendered to the DOM. We can use these built in life-cycle event functions to update, fetch and remove components in a more controlled and meaningful way.
+
+
 - [ ] Explain the details of a Higher Order Component?
+A Higher Order Component is a function that can receive a component as an argument. By passing components through a higher order component we can create reusable components that even have their own seperate state if that is what we are looking for, very simply. We can also use higher order components as a sort of gate keeper by passig it two components and depending on some logic, render two different UIs for the user. This works great for a login screen.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+1) CSS: Simple, effective. Widely understood as it has been used for many years in styling html.
+2) styled:components: Being able to write css in javascript is a huge plus when you are already in a javascript/component mindset. Styles can be reused by exporting them wherever they are needed. Logic can be introduced as props to add changes to reusable features depending on where they are in the App
+3) reactstrap: The main benefit is that you can build a very nice looking application by importing premade and prestyled components. It can turn a very bland styled application into something professional in  surprisinly few lines of code.
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
-- [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+- [x] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [x] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
 
@@ -54,10 +64,10 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
-- [ ] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
-- [ ] You should now be able to filter cards using your tabs!
-- [ ] Make sure all of your props being passed are validated using PropTypes.
+- [x] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
+- [x] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
+- [x] You should now be able to filter cards using your tabs!
+- [x] Make sure all of your props being passed are validated using PropTypes.
 - [ ] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
 
 ## Stretch Challenge
